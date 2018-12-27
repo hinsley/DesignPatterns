@@ -1,3 +1,9 @@
+/// <summary>
+/// Singleton design pattern.
+/// 
+/// Disallows more than one instance of a class inheriting the Singleton
+/// behavior from being instantiated.
+/// </summary>
 using System;
 
 namespace DesignPatterns.Singleton
@@ -11,11 +17,11 @@ namespace DesignPatterns.Singleton
 
             if (s1 == s2)
             {
-                Console.WriteLine("s1 == s2");
+                Console.WriteLine("s1 == s2. Singleton works!");
             }
             else
             {
-                Console.WriteLine("s1 != s2");
+                Console.WriteLine("s1 != s2. Singleton does not work.");
             }
         }
     }
